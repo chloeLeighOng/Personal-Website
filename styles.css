@@ -1,0 +1,21 @@
+:root {
+    --main-text-font: 'Roboto Mono', monospace;
+    --landing-footer-bg-color: #333646;
+    --content-bg-color: #252734;
+    --header-text-color: #EBEBEC;
+    --main-text-color: #D5D9E7;
+    --none-chosen-text-color: #646673;
+    --accent-color: #E0B525;
+}
+
+* {
+    font-family: var(--main-text-font);
+}
+
+#landing {
+    background-color: var(--landing-footer-bg-color);
+}
+
+#footer {
+    background-color: var(--landing-footer-bg-color);
+}
