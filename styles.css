@@ -9,13 +9,63 @@
 }
 
 * {
-    font-family: var(--main-text-font);
+    font-family: var(--main-text-font); 
 }
 
-#landing {
+body, .navBar, h1, h2, h3, h4 {
+    margin: 0;
+    font-weight: normal;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.section {
+    margin: 0 calc(50% - 50vw);
+    padding: 0 calc(50vw - 50%);
+}
+
+#landing, #contact {
     background-color: var(--landing-footer-bg-color);
 }
 
-#footer {
-    background-color: var(--landing-footer-bg-color);
+#background, #projects {
+    background-color: var(--content-bg-color);
 }
+
+.title {
+    color: var(--header-text-color);
+    font-size: 64px;
+}
+
+.description {
+    color: var(--main-text-color);
+}
+
+
+/* Navigation Bar & Links*/
+
+a {
+    color: var(--header-text-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--accent-color);
+}
+
+nav {
+    list-style-type: none;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+
+
+/* Landing*/
+

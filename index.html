@@ -7,32 +7,40 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <main>
-        <div id="landing">
+        <div id="landing" class="section">
             <nav>
-                <ul>
-                    <h4><a href="#landing">Chloe Ong</a></h4> 
-                    <li><a href="#background">Background</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="media/ChloeOng_Resume.pdf" target="_blank">Resume</a></li>
-                </ul>
+                <div class="navBar">
+                    <div id="homeLogo">
+                        <span>&#x1F331</span>
+                        <h4 class="nav"><a href="#landing">Chloe Ong</a></h4>
+                    </div>
+                    <ul class="navLinks">
+                        <li class="navItem"><a href="#background">Background</a></li>
+                        <li class="navItem"><a href="#projects">Projects</a></li>
+                        <li class="navItem"><a href="#contact">Contact</a></li>
+                        <li class="navItem"><a href="media/ChloeOng_Resume.pdf" target="_blank">Resume</a></li>
+                    </ul>
+                </div>
             </nav>
             <div class="profile">
                 <img class="profilePicture" src="media/images/chloePic.png" ="A photo of me"/>
             </div>
             <div class="landingContent">
-                <h1 id="bigName">Chloe Ong</h1>
-                <h3 id="nameTitle">Full-Stack Developer</h3>
+                <h1 id="bigName" class="title">Chloe Ong</h1>
+                <div>
+                    <span>&#x1F331</span>
+                    <h3 id="nameTitle" class="title">Full-Stack Developer</h3>
+                </div>
             </div>
         </div>
-        <div id="background">
-            <h2>Hi! This is what I've done: </h2>
+        <div id="background" class="section">
+            <h2 class="title">Hi! This is what I've done: </h2>
             <div class="description">
                 <ul>
                     <h3>Full-Stack Developer</h3>
@@ -56,15 +64,15 @@
                 </a>
             </div>  
         </div>
-        <div id="projects">
-            <h2>What I'm working on:</h2>
+        <div id="projects" class="section">
+            <h2 class="title">What I'm working on:</h2>
             <div class="description">
                 <h3>Projects</h3>
                 <h3>Personal Website</h3>
                 <h3>Dosimetry Badge Tracker (In Progress)</h3>
                 <h3>Airborne Transmission Tracer (Coming Soon!)</h3>
                 <a href="https://github.com/chloeLeighOng">
-                    <button>> Github</button>
+                    <button>Github</button>
                 </a>
             </div>
             <div class="description">
@@ -74,8 +82,8 @@
         </div>
     </main>
     <footer>
-        <div id="contact">
-            <h2>Let's keep in touch</h2>
+        <div id="contact" class="section">
+            <h2 class="title">Let's keep in touch</h2>
             <h3><a href="https://www.linkedin.com/in/chloe-ong-041a10159/">> LinkedIn</a></h3>
             <h3><a href="https://github.com/chloeLeighOng">> Github</a></h3>
             <h3><a href="mailto: chloeleighong@gmail.com">> chloeleighong@gmail.com</a></h3>
