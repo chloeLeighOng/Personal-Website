@@ -22,13 +22,6 @@ ul {
     padding: 0;
 }
 
-button {
-    background-color: var(--landing-footer-bg-color);
-    color: var(--header-text-color);
-    border: 3px solid var(--accent-color);
-    border-radius: 20px;
-}
-
 #landing, #contact {
     background-color: var(--landing-footer-bg-color);
 }
@@ -46,8 +39,12 @@ button {
     color: var(--main-text-color);
 }
 
-
-
+.button {
+    background-color: var(--landing-footer-bg-color);
+    color: var(--header-text-color);
+    border: 3px solid var(--accent-color);
+    border-radius: 20px;
+}
 
 /* Links*/
 
@@ -75,19 +72,18 @@ nav {
 
 }
 
-#homeLogo {
-    float: left;
-}
-
-.navItem {
+.navLinks li {
     float: right;
 }
 
-
-.navItem a {
+.navLinks a {
     display: inline-block;
     padding: 0vh 1.5rem;
     font-size: 30px;
+}
+
+#homeLogo {
+    float: left;
 }
 
 
@@ -123,10 +119,10 @@ nav {
 
 #nameTitle {
     font-size: 60px;
+    padding-bottom: 30px;
 }
 
-.landingContent button {
-    margin-top: 45px;
+.landingContent .button {
     padding: 10px 50px;
     font-size: 40px;
 }
