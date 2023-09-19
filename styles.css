@@ -32,7 +32,6 @@ ul {
 
 .title {
     color: var(--header-text-color);
-    font-size: 64px;
 }
 
 .description {
@@ -46,13 +45,29 @@ ul {
     border-radius: 20px;
 }
 
-/* Links*/
+.landingContent{
+    padding-left: 7rem;
+    padding-top: 5rem;
+    font-size: 64px;
+}
+
+.description {
+    font-size: 40px;
+}
+
+.sectionTitle {
+    display: flex;
+    padding-left: 7rem;
+}
+
+
+
+/* Links */
 
 a {
     color: var(--header-text-color);
     text-decoration: none;
 }
-
 
 a:hover {
     color: var(--accent-color);
@@ -63,13 +78,15 @@ a:hover {
 nav {
     width: 100%;
     list-style-type: none; 
-    background-color: var(--landing-footer-bg-color);
+    background-color: var(--content-bg-color);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
 .navLinks {
     margin: 0px 0px;
     padding: 3.625rem 5rem 5rem 5rem;
-
 }
 
 .navLinks li {
@@ -88,11 +105,7 @@ nav {
 
 
 
-/* Landing*/
-
-#nameTitle {
-    display: flex;
-}
+/* Landing */
 
 #landing {
     display: flex;
@@ -100,9 +113,18 @@ nav {
     padding-bottom: 18rem;
 }
 
-.landingContent {
-    padding-left: 7rem;
-    padding-top: 5rem;
+#landing .sectionTitle {
+    font-size: 60px;
+    padding-bottom: 30px;
+}
+
+#landing .button {
+    padding: 10px 50px;
+    font-size: 40px;
+}
+
+#bigName {
+    font-size: 128px;
 }
 
 .profile {
@@ -113,19 +135,17 @@ nav {
     width: 430px;
 }
 
-#bigName {
-    font-size: 128px;
+
+
+
+
+/* Background */
+
+
+#background li {
+    font-size: 30px;
 }
 
-#nameTitle {
-    font-size: 60px;
-    padding-bottom: 30px;
-}
-
-.landingContent .button {
-    padding: 10px 50px;
-    font-size: 40px;
-}
 
 
 
