@@ -1,7 +1,7 @@
 :root {
     --main-text-font: 'Roboto Mono', monospace;
     --landing-footer-bg-color: #333646;
-    --content-bg-color: #252734;
+    --main-bg-color: #252734;
     --header-text-color: #EBEBEC;
     --main-text-color: #D5D9E7;
     --none-chosen-text-color: #646673;
@@ -27,7 +27,7 @@ ul {
 }
 
 #background, #projects {
-    background-color: var(--content-bg-color);
+    background-color: var(--main-bg-color);
 }
 
 .title {
@@ -45,19 +45,21 @@ ul {
     border-radius: 20px;
 }
 
-.landingContent{
-    padding-left: 7rem;
-    padding-top: 5rem;
-    font-size: 64px;
-}
-
 .description {
     font-size: 40px;
 }
 
-.sectionTitle {
+.heading {
     display: flex;
+}
+
+.content {
     padding-left: 7rem;
+    padding-right: 7rem;
+}
+
+.text {
+    display: flex;
 }
 
 
@@ -78,7 +80,7 @@ a:hover {
 nav {
     width: 100%;
     list-style-type: none; 
-    background-color: var(--content-bg-color);
+    background-color: var(--main-bg-color);
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -108,19 +110,29 @@ nav {
 /* Landing */
 
 #landing {
-    display: flex;
     padding-top: 5rem;
     padding-bottom: 18rem;
 }
 
-#landing .sectionTitle {
+#landing .content {
+    display: flex;
+}
+
+#landing .heading {
     font-size: 60px;
     padding-bottom: 30px;
 }
 
 #landing .button {
+    margin-right: auto;
     padding: 10px 50px;
     font-size: 40px;
+}
+
+#landing .text {
+    padding-top: 5rem;
+    font-size: 64px;
+    flex-direction: column;
 }
 
 #bigName {
@@ -128,19 +140,15 @@ nav {
 }
 
 .profile {
-    padding-left: 20rem;
-}
+    margin-left: auto;
+} 
 
 .profilePicture {
     width: 430px;
 }
 
 
-
-
-
 /* Background */
-
 
 #background li {
     font-size: 30px;
