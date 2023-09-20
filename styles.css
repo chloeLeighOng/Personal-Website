@@ -12,23 +12,19 @@
     font-family: var(--main-text-font); 
 }
 
+body {
+    background-color: var(--main-bg-color);
+}
+
 body, .navBar, h1, h2, h3, h4 {
     margin: 0;
     font-weight: normal;
 }
 
 ul {
-    list-style-type: none;
     padding: 0;
 }
 
-#landing, #contact {
-    background-color: var(--landing-footer-bg-color);
-}
-
-#background, #projects {
-    background-color: var(--main-bg-color);
-}
 
 .title {
     color: var(--header-text-color);
@@ -39,27 +35,43 @@ ul {
 }
 
 .button {
-    background-color: var(--landing-footer-bg-color);
     color: var(--header-text-color);
     border: 3px solid var(--accent-color);
     border-radius: 20px;
 }
 
-.description {
-    font-size: 40px;
+.text, .heading, .subHeading, #landing .content {
+    display: flex;
 }
 
 .heading {
-    display: flex;
+    font-size: 40px;
+    margin-bottom: 3rem;
 }
 
 .content {
     padding-left: 7rem;
     padding-right: 7rem;
+    padding-bottom: 18rem;
 }
 
-.text {
-    display: flex;
+.wave, .memo, .mobilePhone {
+    padding-top: 1rem;
+    padding-right: 1rem;
+}
+
+.subHeading span {
+    padding-top: 6px;
+    padding-right: 1rem;
+}
+
+.subHeading {
+    font-size: 30px;
+}
+
+.button {
+    margin-right: auto;
+    padding: 10px 50px;
 }
 
 
@@ -79,7 +91,6 @@ a:hover {
 
 nav {
     width: 100%;
-    list-style-type: none; 
     background-color: var(--main-bg-color);
     position: -webkit-sticky;
     position: sticky;
@@ -93,6 +104,7 @@ nav {
 
 .navLinks li {
     float: right;
+    list-style-type: none;
 }
 
 .navLinks a {
@@ -101,31 +113,26 @@ nav {
     font-size: 30px;
 }
 
+.sproutLogo {
+    margin-right: 0.5rem;
+}
+
 #homeLogo {
     float: left;
 }
-
 
 
 /* Landing */
 
 #landing {
     padding-top: 5rem;
-    padding-bottom: 18rem;
-}
-
-#landing .content {
-    display: flex;
 }
 
 #landing .heading {
     font-size: 60px;
-    padding-bottom: 30px;
 }
 
 #landing .button {
-    margin-right: auto;
-    padding: 10px 50px;
     font-size: 40px;
 }
 
@@ -147,13 +154,32 @@ nav {
     width: 430px;
 }
 
-
-/* Background */
-
-#background li {
-    font-size: 30px;
+.sproutTitle {
+    margin-top: 0.5rem;
+    margin-right: 0.75rem;
 }
 
 
+/* Background */
+
+#background .heading {
+   padding-top: 1rem;
+}
+
+#background ul {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-right: 3rem;
+    margin-bottom: 4rem;
+}
+
+#background li, #background .button {
+    font-size: 30px;
+}
+
+#background h3 {
+    font-size: 40px;
+    color: var(--header-text-color);
+}
 
 
