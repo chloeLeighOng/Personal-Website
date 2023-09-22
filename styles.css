@@ -16,6 +16,10 @@ body {
     background-color: var(--main-bg-color);
 }
 
+h3 {
+    font-size: 40px;
+}
+
 body, .navBar, h1, h2, h3, h4 {
     margin: 0;
     font-weight: normal;
@@ -25,13 +29,14 @@ ul {
     padding: 0;
 }
 
+li {
+    font-size: 30px;
+    color: var(--main-text-color);
+}
+
 
 .title {
     color: var(--header-text-color);
-}
-
-.description {
-    color: var(--main-text-color);
 }
 
 .button {
@@ -63,10 +68,6 @@ ul {
 .subHeading span {
     padding-top: 6px;
     padding-right: 1rem;
-}
-
-.subHeading {
-    font-size: 30px;
 }
 
 .button {
@@ -128,7 +129,7 @@ nav {
     padding-top: 5rem;
 }
 
-#landing .heading {
+#landing h3, #landing span {
     font-size: 60px;
 }
 
@@ -155,7 +156,6 @@ nav {
 }
 
 .sproutTitle {
-    margin-top: 0.5rem;
     margin-right: 0.75rem;
 }
 
@@ -173,13 +173,62 @@ nav {
     margin-bottom: 4rem;
 }
 
-#background li, #background .button {
+#background li, #background .button, #projects .button {
     font-size: 30px;
 }
 
-#background h3 {
+/* Background + Projects */
+
+.subHeading {
     font-size: 40px;
     color: var(--header-text-color);
 }
 
+#background li,#background .button, #projects .button {
+    font-size: 30px;
+}
 
+/* Projects */
+
+#projects .text {
+    flex-direction: column;
+}
+
+#projects .subHeading {
+    margin-bottom: 1rem;
+}
+
+#projects .description {
+    margin-bottom: 4rem;
+}
+
+/* Projects + Contact */
+
+#projects li, #contact ul {
+    list-style-type: '>';
+}
+
+/* Contact */
+
+#contact ul {
+    padding-left: 1.5rem;
+    padding-bottom: 5rem;
+}
+
+#contact li {
+    padding-left: 1rem;
+}
+
+#contact {
+    background-color: var(--landing-footer-bg-color);
+    padding-top: 5rem;
+}
+
+#contact .content {
+    padding-bottom: 5rem;
+}
+
+.copyright {
+    margin-bottom: auto;
+    color: var(--none-chosen-text-color);
+}
