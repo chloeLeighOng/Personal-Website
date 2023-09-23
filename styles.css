@@ -57,7 +57,8 @@ li {
 .content {
     padding-left: 7rem;
     padding-right: 7rem;
-    padding-bottom: 18rem;
+    padding-bottom: 9rem;
+    padding-top: 9rem;
 }
 
 .wave, .memo, .mobilePhone {
@@ -202,6 +203,10 @@ nav {
     margin-bottom: 4rem;
 }
 
+#projects .content {
+    padding-bottom: 18rem;
+}
+
 /* Projects + Contact */
 
 #projects li, #contact ul {
@@ -221,11 +226,11 @@ nav {
 
 #contact {
     background-color: var(--landing-footer-bg-color);
-    padding-top: 5rem;
 }
 
 #contact .content {
     padding-bottom: 5rem;
+    padding-top: 5rem;
 }
 
 .copyright {
