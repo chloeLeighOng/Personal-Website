@@ -10,19 +10,22 @@
 
 * {
     font-family: var(--main-text-font); 
+    scroll-behavior: smooth;
+    margin: 0rem;
+    font-weight: normal;
 }
 
 body {
     background-color: var(--main-bg-color);
+    scroll-behavior: smooth;
+}
+
+footer {
+    background-color: var(--landing-footer-bg-color);
 }
 
 h3 {
     font-size: 40px;
-}
-
-body, .navBar, h1, h2, h3, h4 {
-    margin: 0;
-    font-weight: normal;
 }
 
 ul {
@@ -33,7 +36,6 @@ li {
     font-size: 30px;
     color: var(--main-text-color);
 }
-
 
 .title {
     color: var(--header-text-color);
@@ -77,7 +79,6 @@ li {
 }
 
 
-
 /* Links */
 
 a {
@@ -89,12 +90,12 @@ a:hover {
     color: var(--accent-color);
 }
 
+
 /* Navigation Bar */
 
-nav {
+header {
     width: 100%;
     background-color: var(--main-bg-color);
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
 }
@@ -170,15 +171,19 @@ nav {
 #background ul {
     margin-top: 1rem;
     margin-left: 2rem;
-    margin-right: 3rem;
     margin-bottom: 4rem;
 }
+
+#background .description:last-child {
+    margin-left: 6rem;
+}
+
+
+/* Background + Projects */
 
 #background li, #background .button, #projects .button {
     font-size: 30px;
 }
-
-/* Background + Projects */
 
 .subHeading {
     font-size: 40px;
@@ -224,10 +229,6 @@ nav {
     padding-left: 1rem;
 }
 
-#contact {
-    background-color: var(--landing-footer-bg-color);
-}
-
 #contact .content {
     padding-bottom: 5rem;
     padding-top: 5rem;
@@ -236,4 +237,25 @@ nav {
 .copyright {
     margin-bottom: auto;
     color: var(--none-chosen-text-color);
+}
+
+
+/* Mobile */
+
+@media only screen and (max-width: 425px) {
+    .content {
+        flex-direction: column;
+        padding: 0rem;
+        margin: 0rem;
+    }
+
+    /* Landing */ 
+
+    #landing .content {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
 }
