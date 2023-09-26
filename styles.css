@@ -251,11 +251,11 @@ header {
 
     /* Landing */ 
 
-    #landing .content {
+    /* #landing .content {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
-    }
-
+    } */
+    
 }
