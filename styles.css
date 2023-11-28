@@ -92,15 +92,8 @@ a:hover {
 
 
 /* Navigation Bar */
-.sproutLogo {
-    margin-right: 0.5rem;
-}
 
-#homeLogo {
-    float: left;
-}
-
-.primary-header {
+header {
   padding: 1rem;
   background: var(--main-bg-color);
 
@@ -110,42 +103,29 @@ a:hover {
 
 }
 
-/* for demo, probably not the best idea */
-.primary-header,
-.primary-header * {
-  transition: 500ms;
+header, header * {
+  transition: 400ms;
 }
 
-.primary-header.sticking {
+header.sticking {
   background-color: var(--landing-footer-bg-color);
 }
 
-.primary-header__inner {
-  display: flex;
-  justify-content: space-between;
-  color: var(--header-text-color);
-}
-
-.primary-header a {
+header a {
   color: var(--_nav-link-color);
 }
 
-.primary-header a:hover,
-.primary-header a:focus {
+header a:hover, header a:focus {
   opacity: 0.7;
-}
-
-.logo {
-  padding: 0.5rem 7rem;
 }
 
 .navLinks {
     margin: 0px 0px;
-    padding: 0.5rem 7rem;
+    padding: 0.5rem 4rem;
+    display: flex;
 } 
 
 .navLinks li {
-    float: right;
     list-style-type: none;
 }
 
@@ -154,10 +134,30 @@ a:hover {
     padding: 0vh 1.5rem;
 }
 
+.navWrapper {
+    display: flex;
+    justify-content: space-between;
+    color: var(--header-text-color);
+    padding-top: 0.5rem;
+}
+
+.navWrapper li.active {
+    background-color: var(--accent-color);
+    transition: 0.3s ease background-color;
+}
+
+.navWrapper li.active a{
+    color: rgb(255, 255, 255);
+}
+
+.logo {
+    padding: 0.5rem 6rem;
+}
+
 /* Landing */
 
 #landing {
-    padding-top: 5rem;
+    padding-top: 1rem;
 }
 
 #landing h3, #landing span {
