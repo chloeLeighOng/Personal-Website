@@ -20,24 +20,24 @@
         <nav>
             <div class="container nav-container">
                 <a href="/" class="logo-link">
-                    <h2>LOGO</h2>
+                    <h2 class="logo">LOGO</h2>
                 </a>
                 <div class="nav-wrapper">
-                    <button class="btn btn--menu" id="menu-btn" aria-expanded="false" aria-controls="menu">
+                    <button class="btn btn--menu" id="menu-btn" aria-expanded="false" aria-controls="menu" aria-label="Open mobile nav">
                         <h2>NAV</h2>
                     </button>
-                    <ul>
-                        <li>
-                            <a href="/" class="nav-link btn">HOME</a>
+                    <ul role="menubar" class="nav-links" id="menu">
+                        <li role="none">
+                            <a role="menuitem" href="/" class="nav-link btn">HOME</a>
                         </li>
-                        <li>
-                            <a href="#" class="nav-link btn">BACKGROUND</a>
+                        <li role="none">
+                            <a role="menuitem" href="#" class="nav-link btn">BACKGROUND</a>
                         </li>
-                        <li>
-                            <a href="#" class="nav-link btn">PROJECTS</a>
+                        <li role="none">
+                            <a role="menuitem" href="#" class="nav-link btn">PROJECTS</a>
                         </li>
-                        <li>
-                            <a href="#" class="nav-link btn">CONTACT</a>
+                        <li role="none">
+                            <a role="menuitem" href="#" class="nav-link btn--accent">CONTACT</a>
                         </li>
                     </ul>
                 </div>
