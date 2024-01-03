@@ -167,6 +167,7 @@ nav .logo {
 
 #landing .content {
     display: flex;
+    flex-wrap: wrap;
 }
 
 #landing {
@@ -174,22 +175,21 @@ nav .logo {
 }
 
 #landing h3, #landing span {
-    font-size: 60px;
+    font-size: clamp(1rem, 3.1vw, 3.5rem);
 }
 
 #landing .button {
-    font-size: 40px;
+    font-size: clamp(1rem, 2.1vw, 2.5rem);
 }
 
 #landing .text {
     padding-top: 5rem;
     padding-right: 10rem;
-    font-size: 64px;
     flex-direction: column;
 }
 
 #landing .big-name {
-    font-size: 128px;
+    font-size: clamp(1rem, 6.6vw, 8rem);
 }
 
 #landing .profile {
@@ -272,11 +272,4 @@ nav .logo {
 #contact .copyright {
     margin-bottom: auto;
     color: var(--none-chosen-text-color);
-}
-
-
-/* Mobile */
-
-@media (max-width: 600px) {
-
 }
