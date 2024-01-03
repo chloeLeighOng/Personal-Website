@@ -102,66 +102,6 @@ a:hover {
 
 /* Navigation Bar */
 
-header {
-  padding: 1rem;
-  background: var(--main-bg-color);
-
-  position: sticky;
-  top: 0;
-  font-size: 30px;
-
-}
-
-header, header * {
-  transition: 400ms;
-}
-
-header.sticking {
-  background-color: var(--landing-footer-bg-color);
-}
-
-header a {
-  color: var(--_nav-link-color);
-}
-
-header a:hover, header a:focus {
-  opacity: 0.7;
-}
-
-nav .links {
-    margin: 0px 0px;
-    padding: 0.5rem 4rem;
-    display: flex;
-} 
-
-nav .links li {
-    list-style-type: none;
-}
-
-nav .links a {
-    display: inline-block;
-    padding: 0vh 1.5rem;
-}
-
-nav .wrapper {
-    display: flex;
-    justify-content: space-between;
-    color: var(--header-text-color);
-    padding-top: 0.5rem;
-}
-
-nav .wrapper li.active {
-    background-color: var(--accent-color);
-    transition: 0.3s ease background-color;
-}
-
-nav .wrapper li.active a{
-    color: rgb(255, 255, 255);
-}
-
-nav .logo {
-    padding: 0.5rem 6rem;
-}
 
 /* Landing */
 
